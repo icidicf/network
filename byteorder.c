@@ -1,4 +1,14 @@
 #include <stdio.h>
+/*
+test result on ubuntu
+root@ubuntu:/ws/network_programming/network# uname -a
+Linux ubuntu 3.11.0-18-generic #32-Ubuntu SMP Tue Feb 18 21:13:28 UTC 2014 i686 i686 i686 GNU/Linux
+
+
+root@ubuntu:/ws/network_programming/network# ./a.out 
+litte endian
+*/
+
 
 void byteorder()
 {
@@ -23,3 +33,4 @@ main(void)
     byteorder();
 
 }
+
