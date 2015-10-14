@@ -1,0 +1,46 @@
+2015/10/14 05:30:58 [emerg] 16706#0: unknown directive "orker_processes" in ./config/nginx.conf:2
+2015/10/14 05:31:20 [emerg] 16725#0: unexpected "}" in ./config/nginx.conf:12
+2015/10/14 05:31:50 [emerg] 16745#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:10
+2015/10/14 05:36:18 [error] 16815#0: *1 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "localhost:9997"
+2015/10/14 05:37:18 [error] 16815#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "localhost:9997"
+2015/10/14 05:38:10 [emerg] 16987#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:10
+2015/10/14 05:38:18 [error] 16815#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "localhost:9997"
+2015/10/14 05:38:49 [emerg] 17026#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:10
+2015/10/14 05:40:12 [emerg] 17088#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:10
+2015/10/14 05:42:25 [emerg] 17584#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:9
+2015/10/14 05:43:02 [emerg] 17624#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:12
+2015/10/14 05:43:03 [emerg] 17626#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:12
+2015/10/14 05:44:59 [emerg] 17663#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:12
+2015/10/14 06:15:12 [error] 16815#0: *6 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "localhost:9997"
+2015/10/14 06:15:28 [emerg] 18760#0: open() "./config/uwsgi_params" failed (2: No such file or directory) in ./config/nginx.conf:12
+2015/10/14 06:38:15 [error] 19123#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:10063"
+2015/10/14 06:38:30 [error] 19123#0: *5 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /index HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "localhost:10063"
+2015/10/14 06:39:15 [error] 19123#0: *1 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:10063"
+2015/10/14 06:39:30 [error] 19123#0: *5 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "localhost:10063"
+2015/10/14 06:48:54 [error] 19123#0: *12 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:10063"
+2015/10/14 06:52:24 [emerg] 19441#0: invalid number of arguments in "root" directive in ./config/nginx.conf:18
+2015/10/14 06:54:07 [error] 19467#0: *1 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:10064"
+2015/10/14 06:55:58 [error] 19467#0: *5 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:10064"
+2015/10/14 07:00:27 [error] 19055#0: *11 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:8011"
+2015/10/14 07:01:27 [error] 19055#0: *11 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:8011"
+2015/10/14 07:02:27 [error] 19055#0: *11 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:9090", host: "127.0.0.1:8011"
+2015/10/14 07:07:50 [emerg] 19803#0: bind() to 0.0.0.0:10065 failed (98: Address already in use)
+2015/10/14 07:07:50 [emerg] 19803#0: bind() to 0.0.0.0:10065 failed (98: Address already in use)
+2015/10/14 07:07:50 [emerg] 19803#0: bind() to 0.0.0.0:10065 failed (98: Address already in use)
+2015/10/14 07:07:50 [emerg] 19803#0: bind() to 0.0.0.0:10065 failed (98: Address already in use)
+2015/10/14 07:07:50 [emerg] 19803#0: bind() to 0.0.0.0:10065 failed (98: Address already in use)
+2015/10/14 07:07:50 [emerg] 19803#0: still could not bind()
+2015/10/14 07:12:57 [error] 19964#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10070"
+2015/10/14 07:13:01 [error] 19964#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10070"
+2015/10/14 07:13:04 [error] 19964#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10070"
+2015/10/14 07:13:56 [error] 19993#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10071"
+2015/10/14 07:14:00 [error] 19993#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10071"
+2015/10/14 07:14:04 [error] 19993#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10071"
+2015/10/14 07:14:08 [error] 19993#0: *6 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10071"
+2015/10/14 07:16:49 [emerg] 20074#0: invalid number of arguments in "uwsgi_pass" directive in ./config/nginx.conf:22
+2015/10/14 07:17:33 [error] 19993#0: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:10333", host: "127.0.0.1:10071"
+2015/10/14 07:27:53 [emerg] 20416#0: bind() to 0.0.0.0:10073 failed (98: Address already in use)
+2015/10/14 07:27:53 [emerg] 20416#0: bind() to 0.0.0.0:10073 failed (98: Address already in use)
+2015/10/14 07:27:53 [emerg] 20416#0: bind() to 0.0.0.0:10073 failed (98: Address already in use)
+2015/10/14 07:27:53 [emerg] 20416#0: bind() to 0.0.0.0:10073 failed (98: Address already in use)
+2015/10/14 07:27:53 [emerg] 20416#0: bind() to 0.0.0.0:10073 failed (98: Address already in use)
