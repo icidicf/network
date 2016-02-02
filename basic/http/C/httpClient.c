@@ -53,10 +53,14 @@ void GetHost(char * src, char * web, char * file, int * port)  {
       memcpy(file, pB + 1, strlen(pB) - 1);
       file[strlen(pB) - 1] = 0;
     }
+  } else {
+      memcpy(web, pA, strlen(pA));
   }
-  else  memcpy(web, pA, strlen(pA));
-  if(pB)  web[strlen(pA) - strlen(pB)] = 0;
-  else  web[strlen(pA)] = 0;
+  if(pB) {
+      web[strlen(pA) - strlen(pB)] = 0;
+  } else {
+      web[strlen(pA)] = 0;
+  }
   pA = strchr(web, ':');
   if(pA)  *port = atoi(pA + 1);
   else *port = 80;
@@ -105,6 +109,8 @@ int main(int argc, char *argv[])
   {
     fprintf(stderr,"Gethostname error, %s\n", strerror(errno));
     exit(1);
+  } else {
+      printf("host name is %s\n ",host->h_name);
   }
 
   /* 客户程序开始建立 sockfd描述符 */
@@ -127,7 +133,8 @@ int main(int argc, char *argv[])
     exit(1);
   }
 
-  sprintf(request, "GET /%s HTTP/1.1\r\nAccept: */*\r\nAccept-Language: zh-cn\r\n/ User-Agent: Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)\r\n/ Host: %s:%d\r\nConnection: Close\r\n\r\n", host_file, host_addr, portnumber);
+ //sprintf(request, "GET /%s HTTP/1.1\r\nAccept: */*\r\nAccept-Language: zh-cn\r\n/ User-Agent: Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)\r\n/ Host: %s:%d\r\nConnection: Close\r\n\r\n", host_file, host_addr, portnumber);
+ sprintf(request, "GET /%s HTTP/1.1\r\nAccept: */*\r\nAccept-Language: zh-cn\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)\r\nHost: %s:%d\r\nConnection: Close\r\n\r\n", host_file, host_addr, portnumber);
   printf("%s", request);/*准备request，将要发送给主机*/
 
   /*取得真实的文件名*/
